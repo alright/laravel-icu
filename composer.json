@@ -31,11 +31,11 @@
         ]
     },
     "require": {
-        "php": ">=7.4.0",
+        "php": "^8.0",
         "ext-intl": "*",
-        "illuminate/support": "^8",
-        "illuminate/translation": "^8",
-        "illuminate/validation": "^8"
+        "illuminate/support": "^8|^9",
+        "illuminate/translation": "^8|^9",
+        "illuminate/validation": "^8|^9"
     },
     "require-dev": {
         "orchestra/testbench": "6.2.0",
