@@ -256,6 +256,17 @@ class Translator extends NamespacedItemResolver implements TranslatorContract
     }
 
     /**
+     * Add a new JSON path to the loader.
+     *
+     * @param  string  $path
+     * @return void
+     */
+    public function addJsonPath($path)
+    {
+        $this->loader->addJsonPath($path);
+    }
+
+    /**
      * Get the translation for the given key.
      *
      * @return null|array|string
