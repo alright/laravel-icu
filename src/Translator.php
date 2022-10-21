@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Skysplit\Laravel\Translation;
+namespace Alright\Laravel\Translation;
 
 use Countable;
 use Illuminate\Contracts\Translation\Loader;

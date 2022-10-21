@@ -1,8 +1,8 @@
 # Laravel Intl Translator
 
-[![Build Status](https://travis-ci.org/Skysplit/laravel5-intl-translation.svg?branch=master)](https://travis-ci.org/Skysplit/laravel5-intl-translation)
-[![Latest Stable Version](https://poser.pugx.org/skysplit/laravel5-intl-translation/v/stable)](https://packagist.org/packages/skysplit/laravel5-intl-translation)
-[![Latest Unstable Version](https://poser.pugx.org/skysplit/laravel5-intl-translation/v/unstable)](https://packagist.org/packages/skysplit/laravel5-intl-translation)
+[![Build Status](https://travis-ci.org/alright/laravel-icu.svg?branch=master)](https://travis-ci.org/Alright/laravel5-intl-translation)
+[![Latest Stable Version](https://poser.pugx.org/alright/laravel-icu/v/stable)](https://packagist.org/packages/Alright/laravel5-intl-translation)
+[![Latest Unstable Version](https://poser.pugx.org/alright/laravel-icu/v/unstable)](https://packagist.org/packages/Alright/laravel5-intl-translation)
 
 - [Introduction](#introduction)
 - [Requirements](#requirements)
@@ -17,7 +17,7 @@
 - [Formatting in details](#formatting-in-details)
 
 # Introduction
-**Laravel Intl Translator** uses php-intl extension to provide translation for your application.
+**Laravel ICU** uses php-intl extension to provide translation for your application.
 
 Please mind that this package **breaks framework default behaviour for validators**.
 
@@ -56,8 +56,8 @@ Illuminate\Validation\ValidationServiceProvider::class,
 
 And add line:
 ```php
-Skysplit\Laravel\Translation\TranslationServiceProvider::class,
-Skysplit\Laravel\Translation\ValidationServiceProvider::class,
+Alright\Laravel\Translation\TranslationServiceProvider::class,
+Alright\Laravel\Translation\ValidationServiceProvider::class,
 ```
 
 
@@ -68,19 +68,19 @@ Skysplit\Laravel\Translation\ValidationServiceProvider::class,
 
 
 ```bash
-php artisan vendor:publish --provider="Skysplit\Laravel\Translation\TranslationServiceProvider" --force
+php artisan vendor:publish --provider="Alright\Laravel\Translation\TranslationServiceProvider" --force
 ```
 
 If you would like to publish only config
 
 ```bash
-php artisan vendor:publish --provider="Skysplit\Laravel\Translation\TranslationServiceProvider" --tag=config
+php artisan vendor:publish --provider="Alright\Laravel\Translation\TranslationServiceProvider" --tag=config
 ```
 
 If you would like to publish only one language files set
 
 ```bash
-php artisan vendor:publish --provider="Skysplit\Laravel\Translation\TranslationServiceProvider" --force --tag="lang.{locale}[,lang.{other_locale}]"
+php artisan vendor:publish --provider="Alright\Laravel\Translation\TranslationServiceProvider" --force --tag="lang.{locale}[,lang.{other_locale}]"
 ```
 
 ---

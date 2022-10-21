@@ -1,15 +1,20 @@
 {
-    "name": "skysplit/laravel5-intl-translation",
+    "name": "alright/laravel-icu",
     "type": "library",
     "license": "MIT",
-    "description": "Laravel 5 package for better translation syntax using php-intl extension",
+    "description": "Laravel package for better ICU translation syntax using php-intl extension",
     "keywords": [
         "laravel",
         "translation",
         "validation",
-        "intl"
+        "intl",
+        "icu"
     ],
     "authors": [
+        {
+            "name": "Evgeny Tronchuk",
+            "email": "evgenytronchuk@gmail.com"
+        },
         {
             "name": "Tomasz Romik",
             "email": "manetamajster@gmail.com"
@@ -17,7 +22,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Skysplit\\Laravel\\Translation\\": "src/"
+            "Alright\\Laravel\\Translation\\": "src/"
         }
     },
     "autoload-dev": {

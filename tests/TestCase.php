@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
-use Skysplit\Laravel\Translation\TranslationServiceProvider;
-use Skysplit\Laravel\Translation\ValidationServiceProvider;
+use Alright\Laravel\Translation\TranslationServiceProvider;
+use Alright\Laravel\Translation\ValidationServiceProvider;
 
 /**
  * @internal
