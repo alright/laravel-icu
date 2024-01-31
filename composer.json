@@ -1,5 +1,5 @@
 {
-    "name": "alright/laravel-icu",
+    "name": "masterplus-dev/laravel-icu",
     "type": "library",
     "license": "MIT",
     "description": "Laravel package for better ICU translation syntax using php-intl extension",
@@ -31,16 +31,16 @@
         ]
     },
     "require": {
-        "php": ">=7.4.0",
+        "php": ">=8.0",
         "ext-intl": "*",
-        "illuminate/support": "^8",
-        "illuminate/translation": "^8",
-        "illuminate/validation": "^8"
+        "illuminate/support": "^10",
+        "illuminate/translation": "^10",
+        "illuminate/validation": "^10"
     },
     "require-dev": {
-        "orchestra/testbench": "6.2.0",
+        "orchestra/testbench": "^8",
         "phpunit/phpunit": "^9.0",
-        "friendsofphp/php-cs-fixer": "^2.16"
+        "friendsofphp/php-cs-fixer": "^3.0"
     },
     "scripts": {
         "lint-fix": "php vendor/bin/php-cs-fixer fix --config=.php_cs",
