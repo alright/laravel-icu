@@ -1,8 +1,8 @@
-# Laravel Intl Translator
+# Laravel ICU Translator
 
-[![Build Status](https://travis-ci.org/alright/laravel-icu.svg?branch=master)](https://travis-ci.org/Alright/laravel5-intl-translation)
-[![Latest Stable Version](https://poser.pugx.org/alright/laravel-icu/v/stable)](https://packagist.org/packages/Alright/laravel5-intl-translation)
-[![Latest Unstable Version](https://poser.pugx.org/alright/laravel-icu/v/unstable)](https://packagist.org/packages/Alright/laravel5-intl-translation)
+[//]: # ([![Build Status]&#40;https://travis-ci.org/alright/laravel-icu.svg?branch=master&#41;]&#40;https://travis-ci.org/alright/laravel-icu&#41;)
+[//]: # ([![Latest Stable Version]&#40;https://poser.pugx.org/alright/laravel-icu/v/stable&#41;]&#40;https://packagist.org/packages/alright/laravel-icu&#41;)
+[//]: # ([![Latest Unstable Version]&#40;https://poser.pugx.org/alright/laravel-icu/v/unstable&#41;]&#40;https://packagist.org/packages/alright/laravel-icu&#41;)
 
 - [Introduction](#introduction)
 - [Requirements](#requirements)
@@ -31,10 +31,9 @@ app('translator')->formatMessage($locale, $message, $params)
 ```
 
 # Requirements
-- Laravel **6**
+- Laravel **8.x - 12.x**
+- PHP **7.4 - 8.3**
 - php-intl extension installed
-
-Please feel free to contribute to this package for other Laravel versions support!
 
 # Installation
 
