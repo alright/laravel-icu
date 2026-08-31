@@ -31,9 +31,11 @@ app('translator')->formatMessage($locale, $message, $params)
 ```
 
 # Requirements
-- Laravel **8.x - 12.x**
-- PHP **7.4 - 8.3**
+- Laravel **8.x - 13.x**
+- PHP **7.4 - 8.4**
 - php-intl extension installed
+
+> Laravel 13.x requires PHP **8.3** or higher.
 
 # Installation
 

@@ -2,6 +2,24 @@
 
 All notable changes to `alright/laravel-icu` will be documented in this file.
 
+## [4.1.0] - 2026-08-31
+
+### Added
+- Support for Laravel 13.x
+- Support for PHP 8.4
+
+### Fixed
+- `Validator::__construct()` now delegates to the parent constructor, so Laravel's
+  attribute placeholder (`dotPlaceholder` on 8.x/9.x, `$placeholderHash` on 10.x+)
+  is initialised. Without it, attributes containing escaped dots (`foo\.bar`) were
+  parsed incorrectly.
+- `ValidationFactory::__construct()` uses an explicit nullable type for `$container`,
+  removing the implicit-nullable deprecation on PHP 8.4. The type hint is now the
+  `Illuminate\Contracts\Container\Container` contract, matching the parent.
+
+### Changed
+- Test suite runs on PHPUnit 9 - 12; `phpunit.xml` migrated off the deprecated schema.
+
 ## [4.0.0] - 2025-11-12
 
 ### Added

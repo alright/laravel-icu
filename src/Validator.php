@@ -13,13 +13,7 @@ class Validator extends LaravelValidator
     public function __construct(Translator $translator, array $data, array $rules,
                                 array $messages = [], array $customAttributes = [])
     {
-        $this->initialRules = $rules;
-        $this->translator = $translator;
-        $this->customMessages = $messages;
-        $this->data = $this->parseData($data);
-        $this->customAttributes = $customAttributes;
-
-        $this->setRules($rules);
+        parent::__construct($translator, $data, $rules, $messages, $customAttributes);
     }
 
     /**
